@@ -113,7 +113,7 @@ const HomePage = () => {
             justifyContent="space-around"
             flexWrap="wrap"
           >
-            {books.map((book) => (
+            {books?.map((book) => (
               <Card
                 key={book.id}
                 onClick={() => handleClickBook(book.id)}
